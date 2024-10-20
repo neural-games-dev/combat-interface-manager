@@ -1,6 +1,6 @@
 ## Interface: 110002
 ## Title: |cFFaa3939Combat Interface Manager|r
-## IconTexture: media/cim-icon-color.tga
+## IconTexture: media/cim-icon-color
 ## Version: v0.1.0
 ## SavedVariables: CombatInterfaceManagerDB
 ## Notes: Utility addon that helps you hide & restore UI elements when you're in and out of combat.  (v0.1.0).

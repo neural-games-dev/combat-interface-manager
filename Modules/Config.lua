@@ -29,7 +29,7 @@ function Config:GetBlizzOptionsFrame(cim)
       args = {
          uiElements = {
             desc = '',
-            name = 'UI Elements',
+            name = 'Hide in Combat',
             order = 100,
             type = 'group',
             args = {
@@ -38,7 +38,7 @@ function Config:GetBlizzOptionsFrame(cim)
                   get = function()
                      return cim.utils:GetDbValue('isHidingChatFrame');
                   end,
-                  name = 'Hide Chat?',
+                  name = 'Chat',
                   order = 101,
                   set = function(info, value)
                      cim.utils:SetDbValue('isHidingChatFrame', value);
@@ -50,7 +50,7 @@ function Config:GetBlizzOptionsFrame(cim)
                   get = function()
                      return cim.utils:GetDbValue('isHidingMinimap');
                   end,
-                  name = 'Hide Minimap?',
+                  name = 'Minimap',
                   order = 102,
                   set = function(info, value)
                      cim.utils:SetDbValue('isHidingMinimap', value);
@@ -62,7 +62,7 @@ function Config:GetBlizzOptionsFrame(cim)
                   get = function()
                      return cim.utils:GetDbValue('isHidingObjectiveTracker');
                   end,
-                  name = 'Hide Quest Log?',
+                  name = 'Quest Log',
                   order = 103,
                   set = function(info, value)
                      cim.utils:SetDbValue('isHidingObjectiveTracker', value);

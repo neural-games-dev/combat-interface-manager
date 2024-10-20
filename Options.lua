@@ -5,4 +5,7 @@ CIM_Defaults = {
    isHidingChatFrame = false,
    isHidingMinimap = false,
    isHidingObjectiveTracker = false,
+   isLoaded = {
+      prat = false,
+   },
 }
