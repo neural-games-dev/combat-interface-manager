@@ -10,7 +10,7 @@ local CombatInterfaceManager = LibStub('AceAddon-3.0'):NewAddon('CombatInterface
 
 function CombatInterfaceManager:OnInitialize()
    self.version = C_AddOns.GetAddOnMetadata('combat-interface-manager', 'Version'); -- this pulls the version number from the TOC file
-   self.db = LibStub('AceDB-3.0'):New('CombatInterfaceManagerDB', { profile = {} }, true);
+   self.db = LibStub('AceDB-3.0'):New('CombatInterfaceManagerDB', { profile = CIM_Defaults }, true);
 
    -- calling all modules! all modules to the front! (keep in this order)
    self.chalk = self:GetModule('Chalk');
