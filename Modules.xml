@@ -1,0 +1,23 @@
+<Ui
+   xmlns="http://www.blizzard.com/wow/ui/"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd"
+>
+   <!-- ========================================================================== -->
+   <!-- MY MODULES - KEEP THESE IN ORDER -->
+   <!-- ========================================================================== -->
+   <Script file="Modules/Chalk.lua"/>
+   <!--   <Script file="Modules/Dump.lua"/>-->
+   <!--   <Script file="Modules/Inspecty.lua"/>-->
+   <Script file="Modules/Utils.lua"/>
+   <Script file="Modules/Config.lua"/>
+   <Script file="Modules/Logger.lua"/>
+   <!--   <Script file="Modules/Selling.lua"/>-->
+   <!--   <Script file="Modules/Sorting.lua"/>-->
+   <!--   <Script file="Modules/Tooltip.lua"/>-->
+
+   <!-- ========================================================================== -->
+   <!-- PLUG-INS FOR EXTERNAL ADDONS -->
+   <!-- ========================================================================== -->
+   <!--   <Script file="Plugins/[something goes here].lua"/>-->
+</Ui>

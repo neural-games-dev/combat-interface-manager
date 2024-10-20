@@ -1,0 +1,25 @@
+## Interface: 110002
+## Title: |cFFbada55Combat Interface Manager|r
+## Version: v0.1.0
+## SavedVariables: CombatInterfaceManagerDB
+## Notes: Utility addon that helps you hide & restore UI elements when you're in and out of combat.  (v0.1.0).
+## Author: Neural Games
+## eMail: anewlevelmp@gmail.com
+## GitHub: https://github.com/neural-games-dev/combat-interface-manager
+## DefaultState: enabled
+## Created: 19-Oct-2024
+## Last Updated: 19-Oct-2024
+
+# 3rd party libs
+Libs.xml
+
+# Main core file
+CombatInterfaceManager.lua
+
+# CIM modules
+Modules.xml
+
+# CIM helpers
+Constants.lua
+# Options.lua
+Slashies.lua
