@@ -9,4 +9,3 @@
 The icon for this addon was provided, free of charge, by <a href="https://www.freepik.com/icon/sword_571937#fromView=resource_detail&position=2">Icon by Freepik</a> 
 
 more 
-
