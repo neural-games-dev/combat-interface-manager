@@ -1,6 +1,7 @@
 {
    "folders": [
       {
+         "name": "Combat Interface Manager",
          "path": "."
       }
    ],
@@ -39,7 +40,22 @@
          "Settings",
          "IsSecureCmd",
          "NUM_CHAT_WINDOWS",
-         "ChatEdit_GetActiveWindow"
-      ]
+         "ChatEdit_GetActiveWindow",
+         "SlashCmdList",
+         "hash_SlashCmdList",
+         "class",
+         "FCF_SetLocked",
+         "FCF_SelectDockFrame"
+      ],
+      "workbench.colorCustomizations": {
+         "commandCenter.border": "#e7e7e799",
+         "sash.hoverBorder": "#6e267f",
+         "tab.activeBorder": "#6e267f",
+         "titleBar.activeBackground": "#4c1a58",
+         "titleBar.activeForeground": "#e7e7e7",
+         "titleBar.inactiveBackground": "#4c1a5899",
+         "titleBar.inactiveForeground": "#e7e7e799"
+      },
+      "peacock.color": "#4c1a58"
    }
 }

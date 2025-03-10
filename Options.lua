@@ -2,10 +2,21 @@
 --## DEFINING THE DEFAULT DB PROFILE OPTIONS TABLE
 --## ==========================================================================
 CIM_Defaults = {
-   isHidingChatFrame = false,
-   isHidingMinimap = false,
-   isHidingObjectiveTracker = false,
-   isLoaded = {
-      prat = false,
+   debugEnabled = false,
+   enableVerboseLogging = false,
+   isHiding = {
+      chatFrame = false,
+      minimap = false,
+      objectiveTracker = false,
    },
+   isLoaded = {
+      itemLock = nil,
+      prat = nil,
+   },
+   playerInfo = {
+      factionGroup = nil,
+      name = "",
+   },
+   showCommandOutput = false,
+   showGreeting = true,
 }
