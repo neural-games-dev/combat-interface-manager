@@ -3,14 +3,14 @@
 --## ===============================================================================================
 -- Libs / Packages
 local CombatInterfaceManager =
-   LibStub("AceAddon-3.0"):NewAddon("CombatInterfaceManager", "AceConsole-3.0", "AceEvent-3.0")
+    LibStub("AceAddon-3.0"):NewAddon("CombatInterfaceManager", "AceConsole-3.0", "AceEvent-3.0")
 
 --## ===============================================================================================
 --## START UP & GREETING SCRIPTS
 --## ===============================================================================================
 
 function CombatInterfaceManager:OnInitialize()
-   self.version = C_AddOns.GetAddOnMetadata("combat-interface-manager", "Version") -- this pulls the version number from the TOC file
+   self.version = C_AddOns.GetAddOnMetadata("CombatInterfaceManager", "Version") -- this pulls the version number from the TOC file
    self.db = LibStub("AceDB-3.0"):New("CombatInterfaceManagerDB", { profile = CIM_Defaults }, true)
 
    -- calling all modules! all modules to the front! (keep in this order)
@@ -47,12 +47,12 @@ function CombatInterfaceManager:OnEnable()
    if self.utils:GetDbValue("showGreeting") then
       self.logger:Print(
          "Hi, "
-            .. playerName
-            .. "! Thanks for using "
-            .. CIM_Constants.addOnNameQuoted
-            .. "! Type "
-            .. CIM_Constants.slashCommandQuoted
-            .. " to get more info."
+         .. playerName
+         .. "! Thanks for using "
+         .. CIM_Constants.addOnNameQuoted
+         .. "! Type "
+         .. CIM_Constants.slashCommandQuoted
+         .. " to get more info."
       )
    end
 end
@@ -72,10 +72,10 @@ function CombatInterfaceManager:RegisterChatFramesListener()
             local chat_frame = _G["ChatFrame" .. i]
             self.logger:Debug(
                "Processing chat frame -- "
-                  .. "ID: "
-                  .. chat_frame:GetName()
-                  .. ", Name: "
-                  .. chat_frame.name
+               .. "ID: "
+               .. chat_frame:GetName()
+               .. ", Name: "
+               .. chat_frame.name
             )
 
             if is_in_combat then
@@ -101,7 +101,7 @@ function CombatInterfaceManager:RegisterChatFramesListener()
 
    local f = CreateFrame("Frame")
    f:RegisterEvent("PLAYER_REGEN_DISABLED") -- Event for entering combat
-   f:RegisterEvent("PLAYER_REGEN_ENABLED") -- Event for leaving combat
+   f:RegisterEvent("PLAYER_REGEN_ENABLED")  -- Event for leaving combat
    f:SetScript("OnEvent", ToggleChatFrames)
 end
 
@@ -126,7 +126,7 @@ function CombatInterfaceManager:RegisterMinimapListener()
 
    local f = CreateFrame("Frame")
    f:RegisterEvent("PLAYER_REGEN_DISABLED") -- Event for entering combat
-   f:RegisterEvent("PLAYER_REGEN_ENABLED") -- Event for leaving combat
+   f:RegisterEvent("PLAYER_REGEN_ENABLED")  -- Event for leaving combat
    f:SetScript("OnEvent", ToggleMinimap)
 end
 
@@ -151,6 +151,6 @@ function CombatInterfaceManager:RegisterObjectiveTrackerListener()
 
    local f = CreateFrame("Frame")
    f:RegisterEvent("PLAYER_REGEN_DISABLED") -- Event for entering combat
-   f:RegisterEvent("PLAYER_REGEN_ENABLED") -- Event for leaving combat
+   f:RegisterEvent("PLAYER_REGEN_ENABLED")  -- Event for leaving combat
    f:SetScript("OnEvent", ToggleObjectiveTracker)
 end
