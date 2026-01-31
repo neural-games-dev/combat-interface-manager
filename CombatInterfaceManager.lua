@@ -48,9 +48,7 @@ function CombatInterfaceManager:OnEnable()
       self.logger:Print(
          "Hi, "
          .. playerName
-         .. "! Thanks for using "
-         .. CIM_Constants.addOnNameQuoted
-         .. "! Type "
+         .. "! Thanks for using this addon! Type "
          .. CIM_Constants.slashCommandQuoted
          .. " to get more info."
       )

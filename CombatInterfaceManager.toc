@@ -1,15 +1,15 @@
-## Interface: 12001, 12000
+## Interface: 120000
 ## Title: |cFFaa3939Combat Interface Manager|r
-## IconTexture: media/cim-icon-color
 ## Version: v0.1.2
-## SavedVariables: CombatInterfaceManagerDB
 ## Notes: Utility addon that helps you hide & restore UI elements when you're in and out of combat.  (v0.1.0).
 ## Author: Neural Games
 ## eMail: anewlevelmp@gmail.com
 ## GitHub: https://github.com/neural-games-dev/combat-interface-manager
-## DefaultState: enabled
 ## Created: 19-Oct-2024
 ## Last Updated: 31-Jan-2026
+## DefaultState: enabled
+## SavedVariables: CombatInterfaceManagerDB
+## IconTexture: media/cim-icon-color
 
 # 3rd party libs
 Libs.xml
